@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('solution-index.html')
+    return render_template('name_input-index.html')
 
 
 # This page will be the page after the form
@@ -28,7 +28,7 @@ def report():
     # Check if all are True.
     report = lower_letter and upper_letter and num_end
 
-    return render_template('solution-report.html',report=report,
+    return render_template('name_input-report.html',report=report,
                            lower=lower_letter,upper=upper_letter,
                            num_end=num_end)
 
