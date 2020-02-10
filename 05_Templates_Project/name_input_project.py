@@ -14,6 +14,7 @@ def report():
     lower_letter = False
     upper_letter = False
     num_end = False
+    # The name arguement of the text input is 'username'
     username = request.args.get('username')
 
 
